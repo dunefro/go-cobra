@@ -27,14 +27,14 @@ Flags:
 Use "go-cobra [command] --help" for more information about a command.
 ```
 
-# TO download random image of a cute cat
+## T download random image of a cute cat
 ```
 $ ./go-cobra get cute
 Trying to get the image of a cute cat
 Pictue of a cute cat is saved at file cute.png
 ```
 
-# To download random image of a baby cat
+## To download random image of a baby cat
 ```
 $ ./go-cobra get baby
 Trying to get the image of a baby cat
