@@ -26,15 +26,23 @@ Flags:
 
 Use "go-cobra [command] --help" for more information about a command.
 ```
+## To get the binary
+```
+$ task build
+task: [build] if [[ -d "bin" ]]; then echo "Directory bin exists"; else mkdir bin; fi
+task: [build] go build -o bin/go-cobra main.go
+```
+Now that you have the binary in the `bin/` folder you can add it to your PATH.
 
-# TO download random image of a cute cat
+
+## To download random image of a cute cat
 ```
 $ ./go-cobra get cute
 Trying to get the image of a cute cat
 Pictue of a cute cat is saved at file cute.png
 ```
 
-# To download random image of a baby cat
+## To download random image of a baby cat
 ```
 $ ./go-cobra get baby
 Trying to get the image of a baby cat
