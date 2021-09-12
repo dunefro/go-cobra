@@ -1,0 +1,16 @@
+version: "3"
+
+tasks:
+  build:
+    desc: Build the app
+    cmds:
+      - if [[ -d "bin" ]]; then echo "Directory bin exists"; else mkdir bin; fi
+      - go build -o bin/go-cobra main.go
+  run:
+    desc: Running the app
+    cmds:
+      - go run main.go
+  clean:
+    desc: Remove all *.png files
+    cmds:
+      - rm *.png
